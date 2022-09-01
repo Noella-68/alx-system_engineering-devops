@@ -1,2 +1,2 @@
 #!/bin/bash
-10
+chmod 664 hello olleh
