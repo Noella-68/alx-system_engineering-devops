@@ -1,2 +1,2 @@
 #!/bash/bin
-ls -lt|head /etc/passwd
+ls -lt|head 10 /etc/passwd
