@@ -1,1 +1,0 @@
-*Python requests package exercics*
