@@ -1,6 +1,6 @@
- a faulty wordpress site
-exec { 'fix-wordpress':
-  command => 'bash -c "sed -i s/class-wp-locale.phpp/class-wp-locale.php/ \
-/var/www/html/wp-settings.php; service apache2 restart"',
-  path    => '/usr/bin:/usr/sbin:/bin'
+# Creat a manifest that fix all termintion of phpp.
+
+exec { 'fix_phpp':
+  command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
+  path    => ['/bin', '/usr/bin/', '/usr/loca/bin/'],
 }
